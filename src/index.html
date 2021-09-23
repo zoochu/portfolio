@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./js/loading-page.js" rel="stylesheet">
+    <link href="./slick-default/slick.css" rel="stylesheet">
+    <link href="./fullPage.js/fullpage.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick-default/slick.min.js"></script>
+    <script src="./fullPage.js/fullpage.min.js"></script>
+</head>
+<body>
+            
+    <div class="loader">
+    </div>
+
+<div class="wrap">
+    <div id="menu">
+        <a href="index.html"><img src="./photo/logo1.png"></a>
+        <ul>
+            <!-- <li>
+                <a href="index.html"><img src="./photo/logo1.png"></a>
+            </li> -->
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div id="full-page">
+        
+        <div class="section s0">
+            <h2><i>PASSIONATE ABOUT EVERYTHING</i></h2>
+            <h3>Web Publisher </h3>
+            <p>
+                꾸준함을 이기는 것은 없습니다.<br>
+                열정적으로 도전하는
+                신입 웹퍼블리셔 <span class="highlight">최주은</span>입니다.
+
+
+            </p>
+                
+            <script>
+                document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Amsterdam.", "Full Service.", "Webdevelopment.", "Wij zijn Occhio!"];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("h3").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+            </script>
+            <!-- <img src="./photo/sel.png"> -->
+        </div>
+
+        <div class="section s1">
+           <section> 
+                <div>
+                    <video src="./photo/video.mp4" autoplay controls loop muted></video>
+                </div> 
+                
+                <img src="./photo/tape.png">
+                <div >
+                    <div class="about">
+                        <h2>About me</h2>
+                        <a>이름: 최주은</a><br>
+                        <a>생년월일: 1997.08.22</a><br>
+                        <a>e-mail: junetldms@naver.com</a><br>
+                        <a>~2016: 현대고등학교 졸업</a><br>
+                        <a>~2021: 상명대학교 가족복지학과 졸업</a><br>
+                        <a>~현재: UI/UX 디자인 엡퍼블리셔&프론트엔드 개발자 양성과정 7G 이수 </a>
+                        <a></a>
+                    </div>
+                    
+                    <div class="skill">
+                        <h2>Skill</h2>
+                        <a>- PHOTOSHOP</a><br>
+                        <a>- ILLUSTRATOR</a><br>
+                        <a>- HTML</a><br>
+                        <a>- CSS</a><br>
+                        <a>- JAVASCRIPT</a><br>
+                        <a>- JQUERY</a><br>
+                        <a>- FINALCUT</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="section s2">
+            <h2>Work</h2>
+            <div class="port">
+                <div class="site">
+                    <img src="./photo/renewal1.JPG">
+                    <img src="./photo/maru.JPG">
+                </div>
+                <div class="summary">
+
+                </div>
+             
+            </div>
+            
+        </div>
+
+        <div class="section s3">
+            <!-- <h2>Contact</h2> -->
+            <div class="contact">
+                <div class="thank">
+                    <a>Thank you</a>
+                    <div class="cje">
+                        <p>NAME / Choi Jooeun</p>
+                        <p>email / junetldms@naver.com</p>
+                        <p href="https://github.com/zoochu">Github / https://github.com/zoochu </p>
+                    </div>
+                    <span class="fixed_pfo">© Choijooeun portfolio 2021</span>
+                </div>
+
+            
+        </div>
+
+    </div>
+</div>  
+
+    <script>
+       
+        new fullpage('#full-page',{
+            licenskey:'',
+            sectionsColor:['#f0f5f9','#f7f7f7','#f0f5f9','#f7f7f7'],       
+            navigation: true,
+            navigationTooltips: ['Home','About', 'Work', 'Contact']        
+        });  
+        $(window).load(function(){
+            $('.loader').delay('1000').fadeOut();
+            $('.wrap').delay('1000').fadeIn();
+        });
+    </script>
+
+</body>
+</html>

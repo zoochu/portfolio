@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jooeun's Portfolio</title>
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./js/loading-page.js" rel="stylesheet">
+    <link href="./slick-default/slick.css" rel="stylesheet">
+    <link href="./fullPage.js/fullpage.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick-default/slick.min.js"></script>
+    <script src="./fullPage.js/fullpage.min.js"></script>
+    
+    <!-- <script type="text/javascript">
+    $(window).load(function(){
+        $('.loader').fadeOut();
+    });
+    </script> -->
+</head>
+<body>
+    <!-- 로딩 -->
+        
+    <div class="loader">
+    </div>
+
+
+    <!-- 로딩후 화면 -->
+    <header class="head">
+            <a href="index.html"><img src="./photo/logo1.png"></a>
+
+        <div class="hd">
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Work</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+
+    <main>
+        <div id="full-page">
+            <!-- cont1 start -->
+                <div class="cont1">
+                    <div class="about">
+                        <!-- <h2>ME</h2> -->
+                        <h2><i>PASSIONATE ABOUT EVERYTHING</i></h2>
+                        <h3>Web Publisher CHOI JOOEUN</h3>
+                        <!-- <a><b>"</b>안녕하세요, 신입 웹퍼블리셔 최주은입니다.<b>"</b></a> -->
+                    </div>
+                </div>
+
+            <!-- cont2 start -->
+                <div class="cont2">
+                    <div class="about1">
+                        <video src="./photo/video.mp4" autoplay controls loop muted></video>
+                        <img src="./photo/tape.png">
+                        
+                        <div class="profile">
+                            <h5 class="skill"><b>SKILL</b></h5>
+                            <a>PHOTOSHOP</a><br>
+                            <a>ILLUSTRATOR</a><br>
+                            <a>HTML</a><br>
+                            <a>CSS</a><br>
+                            <a>JAVASCRIPT</a><br>
+                            <a>FINALCUT</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <!-- cont3 start -->
+                <div class="cont3">
+                     
+
+                     
+                </div>
+
+            <!-- cont4 start -->
+            <div class="cont4">
+                 
+
+                 
+            </div>
+         </div>
+    </main>
+<script>
+    $(window).load(function(){
+        $('.loader').delay('3000').fadeOut();
+        loader.css("display","none"); 
+        container.css("display","none"); 
+       
+    });
+    new fullpage('#full-page',{});
+            
+            
+</script>
+    
+
+</body>
+</html>
