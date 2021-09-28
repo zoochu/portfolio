@@ -368,9 +368,9 @@
                 width: 15%;
                 height: 12%;
                 // padding-left: 10px;
-                left: -100px;
-                padding-top: 420px;
-                transform: rotate(330deg);
+                left: -90px;
+                padding-top: 300px;
+                transform: rotate(340deg);
             }
             .video2{
                 display: flex;
@@ -378,29 +378,46 @@
                 // width: 15%;
                 height: 12%;
                 // padding-left: 10px;
-                left: -50px;
-                padding-top: 580px;
-                transform: rotate(330deg);
+                left: -70px;
+                padding-top: 480px;
+                transform: rotate(340deg);
             }
-            img{
+            .film{
                 display: flex;
                 width: 35%;
-                transform: rotate(330deg);
+                transform: rotate(340deg);
                 // display: flex;
                 position: absolute;
                 left: -200px;
-                top:160px
+                top:100px
             }
-            div .about{
-            padding: 5% 0;
-            left: -100px;
+            .self {
+                display: flex;
+               
+                .about{
+                    margin: 0 150px;
+                    line-height: 35px;
+             
+                    .icon{
+                        // display: none;
+
+                        height: 20px;
+                        position: relative;
+                    }
             
+                }
+                .skill{
+                    margin: 0 170px;
+                    line-height: 35px;
+                        .icon{
+                            // display: none;
             
+                            height: 20px;
+                            position: relative;
+                        }
+                    }
+                }
             }
-            div .skill{
-                padding: 2% 0;
-            }
-        }
 
 
         // ------------------------------------세번째 페이지
@@ -429,7 +446,7 @@
                     .fp{
                         img{
                             padding: 20px;
-                            border-style:dashed;
+                            // border-style:dashed;
                             border-color: black;
                             border-width: 5px;
                             width: 90%;
@@ -439,7 +456,7 @@
                     .sp{
                         img{
                             padding: 20px;
-                            border-style: dashed;
+                            // border-style: dashed;
                             border-color: black;
                             border-width: 5px;
                             width: 90%;
@@ -448,7 +465,7 @@
                     .tp{
                         img{
                             padding: 20px;
-                            border-style: dashed;
+                            // border-style: dashed;
                             border-color: black;
                             border-width: 5px;
                             width: 90%;

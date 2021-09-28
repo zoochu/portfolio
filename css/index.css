@@ -366,10 +366,10 @@ header .slide ul {
   position: absolute;
   width: 15%;
   height: 12%;
-  left: -100px;
-  padding-top: 420px;
-  -webkit-transform: rotate(330deg);
-          transform: rotate(330deg);
+  left: -90px;
+  padding-top: 300px;
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
 }
 
 .s1 .video2 {
@@ -378,31 +378,48 @@ header .slide ul {
   display: flex;
   position: absolute;
   height: 12%;
-  left: -50px;
-  padding-top: 580px;
-  -webkit-transform: rotate(330deg);
-          transform: rotate(330deg);
+  left: -70px;
+  padding-top: 480px;
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
 }
 
-.s1 img {
+.s1 .film {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 35%;
-  -webkit-transform: rotate(330deg);
-          transform: rotate(330deg);
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
   position: absolute;
   left: -200px;
-  top: 160px;
+  top: 100px;
 }
 
-.s1 div .about {
-  padding: 5% 0;
-  left: -100px;
+.s1 .self {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.s1 div .skill {
-  padding: 2% 0;
+.s1 .self .about {
+  margin: 0 150px;
+  line-height: 35px;
+}
+
+.s1 .self .about .icon {
+  height: 20px;
+  position: relative;
+}
+
+.s1 .self .skill {
+  margin: 0 170px;
+  line-height: 35px;
+}
+
+.s1 .self .skill .icon {
+  height: 20px;
+  position: relative;
 }
 
 .s2 h2 {
@@ -428,7 +445,6 @@ header .slide ul {
 
 .s2 .port .site .fp img {
   padding: 20px;
-  border-style: dashed;
   border-color: black;
   border-width: 5px;
   width: 90%;
@@ -436,7 +452,6 @@ header .slide ul {
 
 .s2 .port .site .sp img {
   padding: 20px;
-  border-style: dashed;
   border-color: black;
   border-width: 5px;
   width: 90%;
@@ -444,7 +459,6 @@ header .slide ul {
 
 .s2 .port .site .tp img {
   padding: 20px;
-  border-style: dashed;
   border-color: black;
   border-width: 5px;
   width: 90%;
