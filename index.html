@@ -32,35 +32,53 @@
                 <a href="index.html"><img src="./photo/logo1.png"></a>
             </li> -->
             <li>
-                <a href="#">ABOUT</a>
+                <a href="#s1">ABOUT</a>
             </li>
             <li>
-                <a href="#">WORK</a>
+                <a href="#.s2">WORK</a>
             </li>
             <li>
-                <a href="#">CONTACT</a>
+                <a href="#.s3">CONTACT</a>
             </li>
         </ul>
         
     </div>
+    <script>
+        $(function(){
+            $('s1').load('index.html',function(){   });
+            $('s2').load('index.html',function(){   });
+            $('s3').load('index.html',function(){   });
+        });
+    </script>
     
     <div class="nav-btn">
         <span class="bar1"></span>
         <span class="bar2"></span>
         <span class="bar3"></span>
     </div>
-    <header class="">
+
+    <!-- <header class="slide">
         <h1><a href="#"><img src="img/logo-noh.png" alt="로고"></a></h1>
         <div class="nav">
             <ul>
-                <li class=""><a href="#menu1">프로필</a></li>
-                <li class=""><a href="#menu2">웹 퍼블리싱</a></li>
-                <li class=""><a href="#menu3">그래픽</a></li>
-                <li class=""><a href="#menu4">컨텍트</a></li>
+                <li class=""><a href="#menu1">ABOUT</a></li>
+                <li class=""><a href="#menu2">WORK</a></li>
+                <li class=""><a href="#menu3">CONTACT</a></li>
             </ul>
         </div>
-      
-    </header>
+        <script>
+            $(function (){
+                const header = document.querySelector('header');
+                console.log(header)
+
+                header.addEventListener('click', function(){
+                    this.classList.add('.slide');
+                })
+            });
+        </script>
+    </header> -->
+
+
     <div id="full-page">
         
         <div class="section s0">
@@ -103,10 +121,10 @@
       }, 200);
     }
     // text finished, call callback if there is a callback function
-    else if (typeof fnCallback == 'function') {
-      // call callback after timeout
-      setTimeout(fnCallback, 2000);
-    }
+    // else if (typeof fnCallback == 'function') {
+    //   // call callback after timeout
+    //   setTimeout(fnCallback, 2000);
+    // }
   }
   // start a typewriter animation for a text in the dataText array
    function StartTextAnimation(i) {
@@ -171,6 +189,7 @@
 
         <div class="section s2">
             <!-- <h2>Work</h2> -->
+            
             <div class="port">
                 <div class="site">
                     <div class="fp">
@@ -183,6 +202,7 @@
                         <img src="./photo/react3.JPG">
                     </div>
                 </div>
+              
                 <div class="summary">
 
                 </div>
@@ -223,6 +243,7 @@
             $('.loader').delay('1000').fadeOut();
             $('.wrap').delay('1000').fadeIn();
         });
+       
     </script>
 
 </body>
