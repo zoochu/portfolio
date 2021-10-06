@@ -292,14 +292,14 @@
                 }
                 .html{
                     top: 80%;
-                    left: 15%;
+                    left: 20%;
                     animation: css 5s linear infinite;
                 }
                 .css{
                     
-                    top: 25%;
+                    top: 27%;
                     left: 35%;
-                    animation: html 5s linear infinite;
+                    animation: html 6s linear infinite;
                 }
                 .js{
                     top:64%;
@@ -309,17 +309,40 @@
                 }
                 .htmll{
                     top: 30%;
-                    left: 67%;
+                    width:60px;
+                    left: 65%;
                     animation: html 5s linear infinite;
                 }
                 .csss{
                     top: 20%;
-                    left: 85%;
-                    animation: css 5s linear infinite;
+                    left: 88%;
+                    animation: js 8s linear infinite;
+                    width:65px;
                 }
                 .jss{
+                    width:50px;
                     top:17%;
                     left: 15%;
+                    animation: html 5s linear infinite;
+                    
+                    
+                }
+                .html1{
+                    top: 60%;
+                    width:15px;
+                    left: 5%;
+                    animation: html 5s linear infinite;
+                }
+                .css1{
+                    top: 40%;
+                    left: 85%;
+                    animation: js 9s linear infinite;
+                    width:20px;
+                }
+                .js1{
+                    width:25px;
+                    top:85%;
+                    left: 45%;
                     animation: html 5s linear infinite;
                     
                     
@@ -339,11 +362,15 @@
 
     // ------------------------------------두번째 페이지
     .s1{        
+        // left: -100px;
+        margin: 10% 0;
+        
         section{
             display: flex;
             // flex-direction: row;
             justify-content: center;
-            left: -100px;
+            align-items: center;
+            // left: -100px;
 
             // &>div:nth-of-type(1){width:50%}
             // &>div:nth-of-type(2){width:40%}
@@ -362,62 +389,142 @@
                 // 1px 0 #333, 
                 // 0 -1px #333;
             }
-            div video{ 
-                display: flex;
-                position: absolute;
-                width: 15%;
-                height: 12%;
-                // padding-left: 10px;
-                left: -90px;
-                padding-top: 300px;
-                transform: rotate(340deg);
+            .films{
+                width:200px;
+                padding:0 30px;
+                background:url('../photo/squ.png')  0 0;
+                background-size: 44px;
+                transform:rotate(340deg);   
+                position: relative;
+                z-index: 1;
+                top:80px;
+                left: -50px;
+        
+
             }
-            .video2{
+            .films figure{
+                height:105px;
+                background: #000;
+                border:5px solid #000;
+                border-width: 10px 5px 10px 5px;
                 display: flex;
-                position: absolute;
-                // width: 15%;
-                height: 12%;
-                // padding-left: 10px;
-                left: -70px;
-                padding-top: 480px;
-                transform: rotate(340deg);
+                .blank{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    background:white;
+                }
             }
+            .films video{ 
+                width: 100%;
+                // padding-left: 10px;
+                
+               
+            }
+            
             .film{
                 display: flex;
                 width: 35%;
                 transform: rotate(340deg);
-                // display: flex;
+                display: flex;
                 position: absolute;
                 left: -200px;
-                top:100px
+                // top:100px
             }
             .self {
+                width: 70%;
+                background:url('../photo/compp.png') no-repeat;
+                background-size: 100%;
+                background-position-y: px;
                 display: flex;
-               
+                // padding-top: 22%;
+                // top: 0%;
+                // position: relative;
+                z-index: 2;
+                min-height: 60vh;
+                h1{
+                    // position: absolute;
+                    // padding: 0 370px;
+                    // top: 200px;
+                    // margin-top: 100px;
+                    text-align: center;
+                    font-size: 25px;
+                    color:grey;
+                    a{
+                        font-size:35px;
+                        color:black;
+                    }
+                }
+            
+               .two{
+                   padding-left: -300px;
                 .about{
-                    margin: 0 150px;
+                    padding-top: 19%;
+                   
+                    h2{
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        padding-right: 200px;
+                        text-decoration: 3px underline;
+                        text-decoration-color: rgba(95, 158, 160, 0.603);
+                    }
+                    // margin: 0 80px;
                     line-height: 35px;
+                    font-size: 18px;
              
                     .icon{
                         // display: none;
-
+                        padding-left: 170px;
                         height: 20px;
                         position: relative;
                     }
             
                 }
-                .skill{
-                    margin: 0 170px;
+                .education{
+                    position: relative;
+                    // padding-top: 19%;
+                    h2{padding-bottom: 30px;
+                        text-decoration: 3px underline;
+                        text-decoration-color: rgba(95, 158, 160, 0.603);
+                    }
                     line-height: 35px;
+                    font-size: 18px;
+                    // margin: 0 80px;
+             
+                    .icon{
+                        // display: none;
+                        padding-left: 170px;
+                
+                        height: 20px;
+                        position: relative;
+                    }
+            
+                }
+                
+            }
+        }
+                .skill{
+                    padding-top: 10%;
+                    position: absolute;
+                    left: 70%;
+                    h2{padding-bottom: 30px;
+                        text-decoration: 3px underline;
+                        text-decoration-color: rgba(95, 158, 160, 0.603);
+                    }
+                    padding-left: 10px;
+                    line-height: 35px;
+                    font-size: 18px;
+                    
                         .icon{
                             // display: none;
             
                             height: 20px;
                             position: relative;
                         }
-                    }
+                    
                 }
-            }
+                
+        }
 
 
         // ------------------------------------세번째 페이지
@@ -435,40 +542,96 @@
             }
             .port{
                 .site{
-                    display: flex;
+                    // display: flex;
                     text-align: center;
                     position: relative;
                     left: 10%;
-                    width: 70vw;
-                    height: 60vh;
+                    width: 80vw;
+                    // width: 90%;
+                    height: 73vh;
+                    // height:80%;
                     padding: 3% 6rem;
                     border-style: solid;
+                    border-width: 6px;
+                    >div{width:100%;}
+                    .workpage{
+                        text-align: center;
+                        font-size: 40px;
+                        padding-top: 100px;
+                        width:100%;
+                    }
                     .fp{
+                        padding: 3% 0;
+                        width: 100%;
+                        display: flex;
+                        width:100%;
                         img{
                             padding: 20px;
                             // border-style:dashed;
                             border-color: black;
                             border-width: 5px;
-                            width: 90%;
+                            width: 50%;
                             
+                        }
+                        a{
+                            padding-top: 4%;
+                            font-size: 20px;
+                            line-height: 30px;
+                            font-weight: 700;
+                            width: 50%;
+                            p{
+                                font-size: 15px;
+                                text-align: left;
+                                font-weight:normal;
+                            }
                         }
                     }
                     .sp{
+                        padding: 3% 0;
+                        width: 100%;
+                        display: flex;
                         img{
                             padding: 20px;
                             // border-style: dashed;
                             border-color: black;
                             border-width: 5px;
-                            width: 90%;
+                            width: 50%;
+                        }
+                        a{
+                            padding-top: 4%;
+                            width: 50%;
+                            font-size: 20px;
+                            line-height: 30px;
+                            font-weight: 700;
+                            p{
+                                font-size: 15px;
+                                text-align: left;
+                                font-weight:normal;
+                            }
                         }
                     }
                     .tp{
+                        padding: 3% 0;
+                        width: 100%;
+                        display: flex;
                         img{
                             padding: 20px;
                             // border-style: dashed;
                             border-color: black;
                             border-width: 5px;
-                            width: 90%;
+                            width: 50%;
+                        }
+                        a{
+                            padding-top: 4%;
+                            width: 50%;
+                            font-size: 20px;
+                            line-height: 30px;
+                            font-weight: 700;
+                            p{
+                                font-size: 15px;
+                                text-align: left;
+                                font-weight:normal;
+                            }
                         }
                     }
                 }

@@ -265,16 +265,16 @@ header .slide ul {
 
 .s0 .background .html {
   top: 80%;
-  left: 15%;
+  left: 20%;
   -webkit-animation: css 5s linear infinite;
           animation: css 5s linear infinite;
 }
 
 .s0 .background .css {
-  top: 25%;
+  top: 27%;
   left: 35%;
-  -webkit-animation: html 5s linear infinite;
-          animation: html 5s linear infinite;
+  -webkit-animation: html 6s linear infinite;
+          animation: html 6s linear infinite;
 }
 
 .s0 .background .js {
@@ -286,21 +286,48 @@ header .slide ul {
 
 .s0 .background .htmll {
   top: 30%;
-  left: 67%;
+  width: 60px;
+  left: 65%;
   -webkit-animation: html 5s linear infinite;
           animation: html 5s linear infinite;
 }
 
 .s0 .background .csss {
   top: 20%;
-  left: 85%;
-  -webkit-animation: css 5s linear infinite;
-          animation: css 5s linear infinite;
+  left: 88%;
+  -webkit-animation: js 8s linear infinite;
+          animation: js 8s linear infinite;
+  width: 65px;
 }
 
 .s0 .background .jss {
+  width: 50px;
   top: 17%;
   left: 15%;
+  -webkit-animation: html 5s linear infinite;
+          animation: html 5s linear infinite;
+}
+
+.s0 .background .html1 {
+  top: 60%;
+  width: 15px;
+  left: 5%;
+  -webkit-animation: html 5s linear infinite;
+          animation: html 5s linear infinite;
+}
+
+.s0 .background .css1 {
+  top: 40%;
+  left: 85%;
+  -webkit-animation: js 9s linear infinite;
+          animation: js 9s linear infinite;
+  width: 20px;
+}
+
+.s0 .background .js1 {
+  width: 25px;
+  top: 85%;
+  left: 45%;
   -webkit-animation: html 5s linear infinite;
           animation: html 5s linear infinite;
 }
@@ -341,6 +368,10 @@ header .slide ul {
   }
 }
 
+.s1 {
+  margin: 10% 0;
+}
+
 .s1 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,7 +379,9 @@ header .slide ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  left: -100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .s1 div h2 {
@@ -359,29 +392,39 @@ header .slide ul {
   line-height: 25px;
 }
 
-.s1 div video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  width: 15%;
-  height: 12%;
-  left: -90px;
-  padding-top: 300px;
+.s1 .films {
+  width: 200px;
+  padding: 0 30px;
+  background: url("../photo/squ.png") 0 0;
+  background-size: 44px;
   -webkit-transform: rotate(340deg);
           transform: rotate(340deg);
+  position: relative;
+  z-index: 1;
+  top: 80px;
+  left: -50px;
 }
 
-.s1 .video2 {
+.s1 .films figure {
+  height: 105px;
+  background: #000;
+  border: 5px solid #000;
+  border-width: 10px 5px 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  height: 12%;
-  left: -70px;
-  padding-top: 480px;
-  -webkit-transform: rotate(340deg);
-          transform: rotate(340deg);
+}
+
+.s1 .films figure .blank {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: white;
+}
+
+.s1 .films video {
+  width: 100%;
 }
 
 .s1 .film {
@@ -391,33 +434,98 @@ header .slide ul {
   width: 35%;
   -webkit-transform: rotate(340deg);
           transform: rotate(340deg);
+  display: flex;
   position: absolute;
   left: -200px;
-  top: 100px;
 }
 
 .s1 .self {
+  width: 70%;
+  background: url("../photo/compp.png") no-repeat;
+  background-size: 100%;
+  background-position-y: px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 2;
+  min-height: 60vh;
 }
 
-.s1 .self .about {
-  margin: 0 150px;
+.s1 .self h1 {
+  text-align: center;
+  font-size: 25px;
+  color: grey;
+}
+
+.s1 .self h1 a {
+  font-size: 35px;
+  color: black;
+}
+
+.s1 .self .two {
+  padding-left: -300px;
+}
+
+.s1 .self .two .about {
+  padding-top: 19%;
   line-height: 35px;
+  font-size: 18px;
 }
 
-.s1 .self .about .icon {
+.s1 .self .two .about h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 200px;
+  -webkit-text-decoration: 3px underline;
+          text-decoration: 3px underline;
+  -webkit-text-decoration-color: rgba(95, 158, 160, 0.603);
+          text-decoration-color: rgba(95, 158, 160, 0.603);
+}
+
+.s1 .self .two .about .icon {
+  padding-left: 170px;
   height: 20px;
   position: relative;
 }
 
-.s1 .self .skill {
-  margin: 0 170px;
+.s1 .self .two .education {
+  position: relative;
   line-height: 35px;
+  font-size: 18px;
 }
 
-.s1 .self .skill .icon {
+.s1 .self .two .education h2 {
+  padding-bottom: 30px;
+  -webkit-text-decoration: 3px underline;
+          text-decoration: 3px underline;
+  -webkit-text-decoration-color: rgba(95, 158, 160, 0.603);
+          text-decoration-color: rgba(95, 158, 160, 0.603);
+}
+
+.s1 .self .two .education .icon {
+  padding-left: 170px;
+  height: 20px;
+  position: relative;
+}
+
+.s1 .skill {
+  padding-top: 10%;
+  position: absolute;
+  left: 70%;
+  padding-left: 10px;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+.s1 .skill h2 {
+  padding-bottom: 30px;
+  -webkit-text-decoration: 3px underline;
+          text-decoration: 3px underline;
+  -webkit-text-decoration-color: rgba(95, 158, 160, 0.603);
+          text-decoration-color: rgba(95, 158, 160, 0.603);
+}
+
+.s1 .skill .icon {
   height: 20px;
   position: relative;
 }
@@ -431,37 +539,113 @@ header .slide ul {
 }
 
 .s2 .port .site {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
   position: relative;
   left: 10%;
-  width: 70vw;
-  height: 60vh;
+  width: 80vw;
+  height: 73vh;
   padding: 3% 6rem;
   border-style: solid;
+  border-width: 6px;
+}
+
+.s2 .port .site > div {
+  width: 100%;
+}
+
+.s2 .port .site .workpage {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.s2 .port .site .fp {
+  padding: 3% 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .s2 .port .site .fp img {
   padding: 20px;
   border-color: black;
   border-width: 5px;
-  width: 90%;
+  width: 50%;
+}
+
+.s2 .port .site .fp a {
+  padding-top: 4%;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  width: 50%;
+}
+
+.s2 .port .site .fp a p {
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.s2 .port .site .sp {
+  padding: 3% 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .s2 .port .site .sp img {
   padding: 20px;
   border-color: black;
   border-width: 5px;
-  width: 90%;
+  width: 50%;
+}
+
+.s2 .port .site .sp a {
+  padding-top: 4%;
+  width: 50%;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.s2 .port .site .sp a p {
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.s2 .port .site .tp {
+  padding: 3% 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .s2 .port .site .tp img {
   padding: 20px;
   border-color: black;
   border-width: 5px;
-  width: 90%;
+  width: 50%;
+}
+
+.s2 .port .site .tp a {
+  padding-top: 4%;
+  width: 50%;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.s2 .port .site .tp a p {
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
 }
 
 .s3 h2 {
