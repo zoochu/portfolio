@@ -55,7 +55,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 990;
+  z-index: 99999;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -202,6 +202,63 @@ header .slide ul {
 
 .section {
   text-align: left;
+}
+
+#full-page {
+  position: relative;
+  z-index: 9999;
+}
+
+.fix {
+  width: 80%;
+  border: 6px solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 73vh;
+  position: fixed;
+  left: 10%;
+  top: 14%;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.fix.active {
+  -webkit-animation: box 1s;
+          animation: box 1s;
+}
+
+@-webkit-keyframes box {
+  0% {
+    width: 80%;
+  }
+  50% {
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 80%;
+    opacity: 1;
+  }
+}
+
+@keyframes box {
+  0% {
+    width: 80%;
+  }
+  50% {
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 80%;
+    opacity: 1;
+  }
 }
 
 .s0 {
@@ -382,9 +439,10 @@ header .slide ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
 }
 
-.s1 div h2 {
+.s1 section div h2 {
   text-align: center;
   padding-bottom: 10px;
   color: black;
@@ -392,20 +450,27 @@ header .slide ul {
   line-height: 25px;
 }
 
-.s1 .films {
+.s1 section .films {
   width: 200px;
   padding: 0 30px;
   background: url("../photo/squ.png") 0 0;
   background-size: 44px;
-  -webkit-transform: rotate(340deg);
-          transform: rotate(340deg);
-  position: relative;
-  z-index: 1;
-  top: 80px;
-  left: -50px;
+  position: absolute;
+  z-index: 9999;
+  bottom: 0px;
+  left: -2%;
+  -webkit-transform: rotate(0deg) translate(-130%, -30%);
+          transform: rotate(0deg) translate(-130%, -30%);
+  -webkit-transition: .5s .7s;
+  transition: .5s .7s;
 }
 
-.s1 .films figure {
+.s1 section .films.active {
+  -webkit-transform: rotate(340deg) translate(0%, 0);
+          transform: rotate(340deg) translate(0%, 0);
+}
+
+.s1 section .films figure {
   height: 105px;
   background: #000;
   border: 5px solid #000;
@@ -415,7 +480,7 @@ header .slide ul {
   display: flex;
 }
 
-.s1 .films figure .blank {
+.s1 section .films figure .blank {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -423,101 +488,74 @@ header .slide ul {
   background: white;
 }
 
-.s1 .films video {
+.s1 section .films video {
   width: 100%;
 }
 
-.s1 .film {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 35%;
-  -webkit-transform: rotate(340deg);
-          transform: rotate(340deg);
-  display: flex;
-  position: absolute;
-  left: -200px;
-}
-
-.s1 .self {
-  width: 70%;
-  background: url("../photo/compp.png") no-repeat;
+.s1 section .self {
+  width: 80%;
   background-size: 100%;
   background-position-y: px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 5% 10% 0 8%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 2;
-  min-height: 60vh;
+  min-height: 73vh;
 }
 
-.s1 .self h1 {
-  text-align: center;
-  font-size: 25px;
-  color: grey;
+.s1 section .self h1 {
+  font-size: 28px;
+  color: white;
+  text-shadow: -1px 0 #333,  0 1px #333,  1px 0 #333,  0 -1px #333;
+  letter-spacing: 4px;
 }
 
-.s1 .self h1 a {
-  font-size: 35px;
+.s1 section .self h1 a {
+  text-shadow: none;
+  font-size: 45px;
   color: black;
 }
 
-.s1 .self .two {
-  padding-left: -300px;
-}
-
-.s1 .self .two .about {
-  padding-top: 19%;
-  line-height: 35px;
-  font-size: 18px;
-}
-
-.s1 .self .two .about h2 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 200px;
+.s1 section .self h2 {
+  text-align: left;
+  padding: 46px 0 30px;
   -webkit-text-decoration: 3px underline;
           text-decoration: 3px underline;
   -webkit-text-decoration-color: rgba(95, 158, 160, 0.603);
           text-decoration-color: rgba(95, 158, 160, 0.603);
 }
 
-.s1 .self .two .about .icon {
-  padding-left: 170px;
-  height: 20px;
-  position: relative;
+.s1 section .self .two .about {
+  padding-top: 0%;
+  line-height: 35px;
+  font-size: 18px;
 }
 
-.s1 .self .two .education {
+.s1 section .self .two .education {
   position: relative;
   line-height: 35px;
   font-size: 18px;
 }
 
-.s1 .self .two .education h2 {
-  padding-bottom: 30px;
-  -webkit-text-decoration: 3px underline;
-          text-decoration: 3px underline;
-  -webkit-text-decoration-color: rgba(95, 158, 160, 0.603);
-          text-decoration-color: rgba(95, 158, 160, 0.603);
-}
-
-.s1 .self .two .education .icon {
-  padding-left: 170px;
+.s1 section .self .two .icon {
+  padding-left: 0;
   height: 20px;
   position: relative;
 }
 
-.s1 .skill {
-  padding-top: 10%;
+.s1 section .self .skill {
+  padding-top: 3%;
   position: absolute;
-  left: 70%;
+  left: 60%;
   padding-left: 10px;
   line-height: 35px;
   font-size: 18px;
 }
 
-.s1 .skill h2 {
+.s1 section .self .skill h2 {
   padding-bottom: 30px;
   -webkit-text-decoration: 3px underline;
           text-decoration: 3px underline;
@@ -525,7 +563,7 @@ header .slide ul {
           text-decoration-color: rgba(95, 158, 160, 0.603);
 }
 
-.s1 .skill .icon {
+.s1 section .self .skill .icon {
   height: 20px;
   position: relative;
 }
@@ -534,8 +572,7 @@ header .slide ul {
   text-align: center;
   padding-bottom: 10px;
   color: white;
-  font-size: 20px;
-  text-shadow: -1px 0 #333,  0 1px #333,  1px 0 #333,  0 -1px #333;
+  font-size: 40px;
 }
 
 .s2 .port .site {
@@ -545,23 +582,28 @@ header .slide ul {
   width: 80vw;
   height: 73vh;
   padding: 3% 6rem;
-  border-style: solid;
-  border-width: 6px;
 }
 
-.s2 .port .site > div {
+.s2 .port .site div {
   width: 100%;
 }
 
 .s2 .port .site .workpage {
   text-align: center;
-  font-size: 40px;
   padding-top: 100px;
   width: 100%;
+  color: white;
+  font-size: 4em;
+  letter-spacing: 15px;
+  text-shadow: -2px 0 #333,  0 2px #333,  1px 0 #333,  0 -1px #333;
+}
+
+.s2 .port .site .workpage img {
+  width: 510px;
 }
 
 .s2 .port .site .fp {
-  padding: 3% 0;
+  padding: 2% 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,10 +612,14 @@ header .slide ul {
 }
 
 .s2 .port .site .fp img {
-  padding: 20px;
+  padding: 10px;
   border-color: black;
   border-width: 5px;
-  width: 50%;
+  width: 90%;
+}
+
+.s2 .port .site .fp img:hover {
+  opacity: 80%;
 }
 
 .s2 .port .site .fp a {
@@ -591,7 +637,7 @@ header .slide ul {
 }
 
 .s2 .port .site .sp {
-  padding: 3% 0;
+  padding: 2% 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,10 +645,14 @@ header .slide ul {
 }
 
 .s2 .port .site .sp img {
-  padding: 20px;
+  padding: 10px;
   border-color: black;
   border-width: 5px;
-  width: 50%;
+  width: 90%;
+}
+
+.s2 .port .site .sp img:hover {
+  opacity: 80%;
 }
 
 .s2 .port .site .sp a {
@@ -620,7 +670,7 @@ header .slide ul {
 }
 
 .s2 .port .site .tp {
-  padding: 3% 0;
+  padding: 2% 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,10 +678,14 @@ header .slide ul {
 }
 
 .s2 .port .site .tp img {
-  padding: 20px;
+  padding: 10px;
   border-color: black;
   border-width: 5px;
-  width: 50%;
+  width: 90%;
+}
+
+.s2 .port .site .tp img:hover {
+  opacity: 80%;
 }
 
 .s2 .port .site .tp a {
@@ -679,6 +733,11 @@ header .slide ul {
   position: relative;
   left: 650px;
   top: 400px;
+  cursor: pointer;
+}
+
+.s3 .contact .thank .cje p:hover {
+  color: rgba(95, 158, 160, 0.603);
 }
 
 .s3 .contact .thank .fixed_pfo {

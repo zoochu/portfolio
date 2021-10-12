@@ -24,8 +24,10 @@
             
     <div class="loader">
     </div>
+    
 
 <div class="wrap">
+    <div class="fix"></div>
     <div id="menu">
         <a href="index.html"><img src="./photo/mylogo.png"></a>
         <ul>
@@ -216,9 +218,12 @@
                 <div class="site">
                     <div class="workpage">
                         JOOEUN'S WORK PAGE
+                        <img src="photo/justdoit.png">
                     </div>
                     <div class="fp">
+                        <a href="https://zoochu.github.io/renewalsite/renewal_1.html" target="blank">
                         <img src="./photo/renewal1.JPG">
+                        </a>
                         <a>
                            01 리뉴얼사이트
                            <p>
@@ -237,7 +242,9 @@
                         </a>
                     </div>
                     <div class="sp">
+                        <a href="https://zoochu.github.io/marusite/" target="blank">
                         <img src="./photo/maru.JPG">
+                        </a>
                         <a>
                             02 마루사이트
                             <p>
@@ -251,7 +258,9 @@
                         </a>
                     </div>
                     <div class="tp">
-                        <img src="./photo/react3.JPG">
+                        <a href="https://zoochu.github.io/react-03/" target="blank">
+                        <img src="./photo/react3.JPG" href="https://zoochu.github.io/renewalsite/renewal_1.html" target="blank">
+                        </a>
                         <a>
                             03 코로나
                             <p>
@@ -299,7 +308,7 @@
                     <div class="cje">
                         <p>NAME / Choi Jooeun</p>
                         <p>email / junetldms@naver.com</p>
-                        <p href="https://github.com/zoochu">Github / https://github.com/zoochu </p>
+                        <p link href="https://github.com/zoochu" target="_blank">Github / https://github.com/zoochu </p>
                     </div>
                     <span class="fixed_pfo">©CHOIJOOEUN 2021 portfolio</span>
                 </div>
@@ -315,9 +324,21 @@
         new fullpage('#full-page',{
             licenskey:'',
             // sectionsColor:['#f0f5f9','#f7f7f7','#f0f5f9','#f7f7f7'], 
-            sectionsColor:['#fff','#fff','#fff','#fff'],       
+            sectionsColor:['#fff','transparent','transparent','#fff'],       
             // navigation: true,
-            navigationTooltips: ['Home','About', 'Work', 'Contact']        
+            navigationTooltips: ['Home','About', 'Work', 'Contact'],
+            onLeave: function(origin, destination, direction){
+                console.log(destination.index)
+                $('.fix').removeClass('active');
+                setTimeout(()=>{$('.fix').addClass('active');},10);
+
+                //about
+                if(destination.index ==1){
+                    $('.films').addClass('active');
+                }else{
+                    $('.films').removeClass('active');
+                }
+            }   
         });  
         $(window).load(function(){
             $('.loader').delay('1000').fadeOut();
