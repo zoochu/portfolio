@@ -881,7 +881,7 @@
                 1px 0 #333, 
                 0 -1px #333;
                 z-index: 9999;
-                position: relative;;
+                position: relative;
             }
             .contact{
                 
@@ -908,7 +908,15 @@
                             color: black;
                             text-decoration: none;
                             &:hover{
-                                color:rgba(95, 158, 160, 0.603);
+                                // color:rgba(95, 158, 160, 0.603);
+                                color: white;
+                                text-shadow: 
+                                -1px 0 #333, 
+                                0 1px #333, 
+                                1px 0 #333, 
+                                0 -1px #333;
+                                z-index: 9999;
+                                position: relative;
                             }
                         }
                         .cje{
@@ -922,9 +930,7 @@
                                 left: 650px;
                                 top: 400px;
                                 cursor: pointer;
-                                &:hover{
-                                    color:rgba(95, 158, 160, 0.603);
-                                }
+                              
                                 
                                 
                             }

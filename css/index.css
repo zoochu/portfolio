@@ -817,7 +817,10 @@ header .slide ul {
 }
 
 .s3 .contact .thank .last:hover {
-  color: rgba(95, 158, 160, 0.603);
+  color: white;
+  text-shadow: -1px 0 #333,  0 1px #333,  1px 0 #333,  0 -1px #333;
+  z-index: 9999;
+  position: relative;
 }
 
 .s3 .contact .thank .cje p {
@@ -827,10 +830,6 @@ header .slide ul {
   left: 650px;
   top: 400px;
   cursor: pointer;
-}
-
-.s3 .contact .thank .cje p:hover {
-  color: rgba(95, 158, 160, 0.603);
 }
 
 .s3 .contact .thank .fixed_pfo {
