@@ -96,6 +96,13 @@
   display: flex;
 }
 
+#menu ul li a:hover {
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+  -webkit-text-decoration-color: #777777;
+          text-decoration-color: #777777;
+}
+
 @media (max-width: 1300px) {
   #menu {
     padding-left: 38%;
@@ -295,10 +302,11 @@ header .slide ul {
 
 .s0 .background img {
   position: absolute;
-  width: 40px;
+  width: 30px;
 }
 
 .s0 .background .html {
+  width: 25px;
   top: 80%;
   left: 20%;
   -webkit-animation: css 5s linear infinite;
@@ -306,6 +314,7 @@ header .slide ul {
 }
 
 .s0 .background .css {
+  width: 30px;
   top: 27%;
   left: 35%;
   -webkit-animation: html 6s linear infinite;
@@ -313,6 +322,7 @@ header .slide ul {
 }
 
 .s0 .background .js {
+  width: 30px;
   top: 64%;
   left: 57%;
   -webkit-animation: js 5s linear infinite;
@@ -321,7 +331,7 @@ header .slide ul {
 
 .s0 .background .htmll {
   top: 30%;
-  width: 60px;
+  width: 40px;
   left: 65%;
   -webkit-animation: html 5s linear infinite;
           animation: html 5s linear infinite;
@@ -332,11 +342,11 @@ header .slide ul {
   left: 88%;
   -webkit-animation: js 8s linear infinite;
           animation: js 8s linear infinite;
-  width: 65px;
+  width: 25px;
 }
 
 .s0 .background .jss {
-  width: 50px;
+  width: 30px;
   top: 17%;
   left: 15%;
   -webkit-animation: html 5s linear infinite;
@@ -360,7 +370,7 @@ header .slide ul {
 }
 
 .s0 .background .js1 {
-  width: 25px;
+  width: 15px;
   top: 85%;
   left: 45%;
   -webkit-animation: html 5s linear infinite;
@@ -401,6 +411,13 @@ header .slide ul {
   50% {
     margin-top: -30px;
   }
+}
+
+.s0 .next a img {
+  position: absolute;
+  width: 70px;
+  left: 48%;
+  bottom: 3%;
 }
 
 .s1 {

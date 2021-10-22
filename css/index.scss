@@ -89,10 +89,12 @@
         position:fixed;
         top:0;
         left: 0;
+        // width: 100%;
         z-index:99999;
         align-items: center;
         justify-content: space-between;
         box-sizing: border-box;
+        // border-bottom: dashed 5px rgb(204, 204, 204);
         img{
             position: relative;
             margin-left: -600%;
@@ -124,12 +126,16 @@
                     // 0 1px #333, 
                     // 1px 0 #333, 
                     // 0 -1px #333;
+                        &:hover{
+                            // text-decoration: lighten($color: #e2db9c, $amount: 10%);
+                            text-decoration: 2px underline;
+                            text-decoration-color:rgb(119, 119, 119);
+                        }
                     
-                    
+                    }
                 }
             }
         }
-    }
     @media (max-width:1300px){
         #menu{
             padding-left: 38%;
@@ -411,21 +417,23 @@
             .background{
                 img{
                     position: absolute;
-                    width: 40px;
+                    width: 30px;
                     
                 }
                 .html{
+                    width: 25px;
                     top: 80%;
                     left: 20%;
                     animation: css 5s linear infinite;
                 }
                 .css{
-                    
+                    width: 30px;
                     top: 27%;
                     left: 35%;
                     animation: html 6s linear infinite;
                 }
                 .js{
+                    width: 30px;
                     top:64%;
                     left: 57%;
                     animation: js 5s linear infinite;
@@ -433,7 +441,7 @@
                 }
                 .htmll{
                     top: 30%;
-                    width:60px;
+                    width:40px;
                     left: 65%;
                     animation: html 5s linear infinite;
                 }
@@ -441,10 +449,10 @@
                     top: 20%;
                     left: 88%;
                     animation: js 8s linear infinite;
-                    width:65px;
+                    width:25px;
                 }
                 .jss{
-                    width:50px;
+                    width:30px;
                     top:17%;
                     left: 15%;
                     animation: html 5s linear infinite;
@@ -464,7 +472,7 @@
                     width:20px;
                 }
                 .js1{
-                    width:25px;
+                    width:15px;
                     top:85%;
                     left: 45%;
                     animation: html 5s linear infinite;
@@ -480,6 +488,15 @@
             }
             @keyframes js {
             50% { margin-top:-30px;  }
+            }
+            .next{
+                a{
+                    img{position: absolute;
+                        width: 70px;
+                        left: 48%;
+                        bottom: 3%;
+                    }
+                }
             }
         }
 
