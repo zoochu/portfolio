@@ -73,7 +73,7 @@ $(function(){
               fade: true,
               cssEase:'linear' 
            });
-      },2000)
+      },1000)
       
   });
   
@@ -101,8 +101,8 @@ new fullpage('#full-page',{
   }   
 });  
 $(window).load(function(){
-  $('.loader').delay('1000').fadeOut();
-  $('.wrap').delay('1000').fadeIn();
+  $('.loader').delay('500').fadeOut();
+  $('.wrap').delay('500').fadeIn();
 });
 
 
