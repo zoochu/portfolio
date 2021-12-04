@@ -88,7 +88,7 @@ new fullpage('#full-page',{
   navigation: true,
   navigationTooltips: ['Home','About', 'Work', 'Contact'],
   onLeave: function(origin, destination, direction){
-      console.log(destination.index)
+      
       $('.fix').removeClass('active');
       setTimeout(()=>{$('.fix').addClass('active');},10);
 
